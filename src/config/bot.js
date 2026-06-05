@@ -471,12 +471,11 @@ export const botConfig = {
     tools: true,
     utility: true,
     community: true,
-    fun: true,
-  },
-}
+   fun: true,
+  }, 
 
   // =========================
-  // USER INFO COMMANDS (PFP & FM)   ← SPOSTATA QUI (DENTRO botConfig)
+  // USER INFO COMMANDS (PFP & FM)
   // =========================
   userInfo: {
     commands: {
@@ -505,9 +504,7 @@ export const botConfig = {
     maxAvatarSize: 4096,
     showDownloadButtons: true
   },
-
-};
-
+}; 
 
 export function validateConfig(config) {
   const errors = [];
