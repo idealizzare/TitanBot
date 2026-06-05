@@ -3,6 +3,18 @@ import { logger } from '../utils/logger.js';
 
 export const botConfig = {
   // =========================
+  // PREFIX SETTINGS
+  // =========================
+  prefix: {
+    // Default prefix for text commands
+    default: ",",
+    // Allow multiple prefixes
+    alternatives: ["?", "!"],
+    // Case sensitive prefix matching
+    caseSensitive: false,
+  },
+  
+  // =========================
   // BOT PRESENCE (what users see under the bot name)
   // =========================
   // `status` options:
