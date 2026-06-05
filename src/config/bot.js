@@ -475,35 +475,37 @@ export const botConfig = {
   },
 };
 
-// =========================
-// USER INFO COMMANDS (PFP & FM)
-// =========================
-userInfo: {
-  commands: {
-    pfp: {
-      enabled: true,
-      cooldown: 3,
-      description: "Mostra l'avatar di un utente"
+  // =========================
+  // USER INFO COMMANDS (PFP & FM)   ← SPOSTATA QUI (DENTRO botConfig)
+  // =========================
+  userInfo: {
+    commands: {
+      pfp: {
+        enabled: true,
+        cooldown: 3,
+        description: "Mostra l'avatar di un utente"
+      },
+      fm: {
+        enabled: true,
+        cooldown: 3,
+        description: "Mostra cosa sta ascoltando un utente"
+      },
+      userinfo: {
+        enabled: true,
+        cooldown: 5,
+        description: "Mostra info complete di un utente"
+      }
     },
-    fm: {
-      enabled: true,
-      cooldown: 3,
-      description: "Mostra cosa sta ascoltando un utente"
+    avatarFormats: {
+      png: true,
+      jpg: true,
+      webp: true,
+      gif: true
     },
-    userinfo: {
-      enabled: true,
-      cooldown: 5,
-      description: "Mostra info complete di un utente"
-    }
+    maxAvatarSize: 4096,
+    showDownloadButtons: true
   },
-  avatarFormats: {
-    png: true,
-    jpg: true,
-    webp: true,
-    gif: true
-  },
-  maxAvatarSize: 4096,
-  showDownloadButtons: true
+
 };
 
 
