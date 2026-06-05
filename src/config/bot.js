@@ -473,7 +473,7 @@ export const botConfig = {
     community: true,
     fun: true,
   },
-},
+}
 
   // =========================
   // USER INFO COMMANDS (PFP & FM)   ← SPOSTATA QUI (DENTRO botConfig)
