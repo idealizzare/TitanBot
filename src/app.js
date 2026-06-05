@@ -19,7 +19,8 @@ class TitanBot extends Client {
       intents: [
         
         GatewayIntentBits.Guilds,                        
-        GatewayIntentBits.GuildMembers,                 
+        GatewayIntentBits.GuildMembers,   
+        GatewayIntentBits.GuildPresences, 
         
         
         GatewayIntentBits.GuildMessages,                
@@ -35,6 +36,7 @@ class TitanBot extends Client {
 
     this.config = config;
     this.commands = new Collection();
+    this.prefix = process.env.PREFIX || ',';
     this.events = new Collection();
     this.buttons = new Collection();
     this.selectMenus = new Collection();
